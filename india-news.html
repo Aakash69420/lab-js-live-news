@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India News</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>India News</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">USA News</a></li>
+        <li><a href="india-news.html" class="active">India News</a></li>
+      </ul>
+    </nav>
+    <div class="news-container" id="india-news">
+      <div class="loader"></div>
+    </div>
+    <div class="pagination" id="india-pagination"></div>
+    <script src="script.js"></script>
+    <script>
+      indiaNewsSection = document.getElementById('india-news');
+      indiaPagination = document.getElementById('india-pagination');
+      indiaPageNumber = 1;
+      displayIndiaNews();
+    </script>
+  </body>
+</html>
